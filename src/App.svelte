@@ -8,23 +8,29 @@
 </main>
 
 <style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
+
+	body {
+		background-color: #808080;
+		font-family: Helvetica, Sans-Serif, serif;
+		font-size: 20px;
+	}
+	.header {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
+		font-size:48px;
+		text-align:center !important;
+		display:inline-block !important;
+		width:100%;
 	}
 
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
+	.flex-container {
+		margin: 1rem 1rem 0 1rem;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
 	}
 </style>
