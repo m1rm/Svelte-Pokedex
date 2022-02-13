@@ -1,22 +1,20 @@
 <script>
 	export let name;
-	import Pokecard from './components/Pokecard.svelte';
-	import * as pokemon from './assets/pokeData.json'
+	// import Pokecard from './components/Pokecard.svelte';
+	import pokemon from './assets/pokeData.json';
+	console.log(pokemon);
 </script>
 
 <main>
 	<h1>Hello {name}!</h1>
-	<Pokecard></Pokecard>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<div class="flex-container">
+		{#each pokemon as monster}
+			<div>{monster.name}</div>
+		{/each}
+	</div>
 </main>
 
 <style>
-
-	body {
-		background-color: #808080;
-		font-family: Helvetica, Sans-Serif, serif;
-		font-size: 20px;
-	}
 
 	h1 {
 		font-size:48px;
