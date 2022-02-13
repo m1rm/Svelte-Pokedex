@@ -8,12 +8,13 @@
 <main>
 	<h1>Hello {name}!</h1>
 	<div class="flex-container">
-		{#each pokemon as monster}
+		{#each pokemon as monster, i}
 			<Pokecard
-					  name="{monster.name}"
-					  pokedexIndex="{monster.pokedexIndex}"
-					  type="{monster.type}"
-					  portrait="{monster.portrait}"
+					  name={monster.name}
+					  pokedexIndex={monster.pokedexIndex}
+					  type={monster.type}
+					  portrait={monster.portrait}
+					  loopIndex={i}
 			></Pokecard>
 		{/each}
 	</div>
