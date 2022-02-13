@@ -1,9 +1,12 @@
 <script>
 	export let name;
+	import Pokecard from './components/Pokecard.svelte';
+	import * as pokemon from './assets/pokeData.json'
 </script>
 
 <main>
 	<h1>Hello {name}!</h1>
+	<Pokecard></Pokecard>
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
 </main>
 
@@ -13,11 +16,6 @@
 		background-color: #808080;
 		font-family: Helvetica, Sans-Serif, serif;
 		font-size: 20px;
-	}
-	.header {
-		display: flex;
-		justify-content: center;
-		align-items: center;
 	}
 
 	h1 {

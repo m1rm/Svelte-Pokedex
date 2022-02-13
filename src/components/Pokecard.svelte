@@ -1,3 +1,17 @@
+<div id="">
+    <div class='pokecard-flex-container'>
+        <span class='name-number'> {{ name }} </span>
+        <span class='name-number'>#{{ pokedexIndex }}</span>
+        <div class='flex-break'></div>
+        <img src='{{ portrait }}' alt='{{ name }}-image'>
+    </div>
+    <div class='pokecard-flex-container'>
+        <span class='type-badge'>{{ type[0] }}</span>
+    </div>
+</div>
+
+
+
 <style>
     .flex-item {
         flex: 0 0 25%;
