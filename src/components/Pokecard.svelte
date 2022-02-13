@@ -3,10 +3,9 @@
    export let pokedexIndex = "000";
    export let portrait = "https://via.placeholder.com/150";
    export let type = ["undefined"];
-   export let loopIndex = 0;
 </script>
 
-<div id={loopIndex} class="{ type[0] } pokecard">
+<div class="{ type[0] } pokecard">
     <div class='pokecard-flex-container'>
         <span class='name-number'> { name }</span>
         <span class='name-number'>#{ pokedexIndex }</span>
