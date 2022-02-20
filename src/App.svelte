@@ -13,7 +13,7 @@
 					  name={monster.name}
 					  pokedexIndex={monster.pokedexIndex}
 					  type={monster.type}
-					  portrait={monster.portrait}
+					  portrait={monster.img}
 			></Pokecard>
 		{/each}
 	</div>

@@ -23,7 +23,7 @@
         background-color: #808080;
         height: 400px;
         box-shadow: 0 0 6px #404040;
-        margin-top: 4rem;
+        margin: 4rem 2rem 0 2rem;
         border-radius: 5px;
     }
 
