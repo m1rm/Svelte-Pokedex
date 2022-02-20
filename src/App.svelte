@@ -1,6 +1,6 @@
 <script>
 	import Pokedex from "./components/Pokedex.svelte";
-	import MainNavigation from "./components/MainNavigation.svelte";
+	import MainNavigation from "./components/navigation/MainNavigation.svelte";
 	export let pokemon = [];
 </script>
 
