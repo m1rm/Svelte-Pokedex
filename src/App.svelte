@@ -1,7 +1,6 @@
 <script>
-	import pokemon from './assets/pokeData.json';
 	import Pokedex from "./components/Pokedex.svelte";
-	console.log(pokemon);
+	export let pokemon = [];
 </script>
 
 <main>
