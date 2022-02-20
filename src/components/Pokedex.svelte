@@ -4,7 +4,7 @@
 </script>
 
 <div class="flex-container">
-    <h1>Svelte Pokédex</h1>
+    <h2>Svelte Pokédex</h2>
     {#each pokemon as monster}
         <Pokecard
                 name={monster.name}
@@ -16,7 +16,7 @@
 </div>
 
 <style>
-    h1 {
+    h2 {
         font-size:48px;
         text-align:center !important;
         display:inline-block !important;
