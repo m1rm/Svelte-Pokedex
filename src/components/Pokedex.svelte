@@ -11,7 +11,7 @@
                 pokedexIndex={monster.pokedexIndex}
                 type={monster.type}
                 portrait={monster.img}
-        ></Pokecard>
+        />
     {/each}
 </div>
 

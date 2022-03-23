@@ -1,7 +1,5 @@
 <script>
-	import Pokedex from "./components/Pokedex.svelte";
 	import MainNavigation from "./components/navigation/MainNavigation.svelte";
-	export let pokemon = [];
 </script>
 
 <main>
@@ -9,7 +7,6 @@
 		<h1>Welcome to the Pokémon World - written in Svelte!</h1>
 	</div>
 	<MainNavigation></MainNavigation>
-	<Pokedex pokemon={pokemon}></Pokedex>
 </main>
 
 <style>

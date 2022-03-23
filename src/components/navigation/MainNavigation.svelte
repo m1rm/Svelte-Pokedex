@@ -1,33 +1,28 @@
+<script>
+    import { Router, Route, Link } from "svelte-routing";
+    import Pokedex from "../Pokedex.svelte";
+    import News from "../News.svelte";
+    import Team from "../Team.svelte";
+    export let pokemon = [];
+    export let url = ""; //avoid ignore the Router
+</script>
 <div>
-
+    <Router url="{url}">
+        <nav class="main-nav-flex-container">
+            <Link to="news">News</Link>
+            <Link to="/">Pokédex</Link>
+            <Link to="team">Manage Your Team</Link>
+        </nav>
+        <div>
+            <Route path="news" component="{News}" />
+            <Route path="/" component="{Pokedex}" />
+            <Route path="/team" component="{Team}" />
+        </div>
+    </Router>
 </div>
-<nav class="main-nav-flex-container">
-    <ul>
-        <li>
-            <a>
-                News
-            </a>
-        </li>
-        <li>
-            <a>
-                Kanto Pokédex
-            </a>
-        </li>
-        <li>
-            <a>
-                Mange your Team
-            </a>
-        </li>
-    </ul>
-</nav>
 
 <style>
-    nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .main-nav-flex-container ul{
+    .main-nav-flex-container {
         display: flex;
         justify-content: space-around;
         align-items: center;
