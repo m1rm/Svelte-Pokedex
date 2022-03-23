@@ -14,9 +14,9 @@
             <Link to="team">Manage Your Team</Link>
         </nav>
         <div>
-            <Route path="news" component="{News}" />
-            <Route path="/" component="{Pokedex}" />
-            <Route path="/team" component="{Team}" />
+            <Route path="news"><News /></Route>
+            <Route path="/"><Pokedex pokemon={pokemon}/></Route>
+            <Route path="/team"><Team /></Route>
         </div>
     </Router>
 </div>

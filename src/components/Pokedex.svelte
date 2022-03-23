@@ -1,6 +1,6 @@
 <script>
     import Pokecard from '../components/Pokecard.svelte';
-    export let pokemon=[];
+    export let pokemon = [];
 </script>
 
 <div class="flex-container">
