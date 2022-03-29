@@ -8,7 +8,7 @@
     {#each pokemon as monster}
         <Pokecard
                 name={monster.name}
-                pokedexIndex={monster.pokedexIndex}
+                pokedexIndex={monster.num}
                 type={monster.type}
                 portrait={monster.img}
         />
