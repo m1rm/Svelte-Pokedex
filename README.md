@@ -23,6 +23,11 @@ Navigate to [localhost:8080](http://localhost:8080). You should see the app runn
 
 By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `sirv` commands in package.json to include the option `--host 0.0.0.0`.
 
+## Bing News API
+The news section is build using the [Bing News Search API](https://docs.microsoft.com/en-us/bing/search-apis/bing-news-search/overview). You will have to create an account registering to the free plan.
+You will then have access to your API Key. The key as well as the API host must be provided in a 
+.env file, which you can create based on the exemplary template (.env.example).
+
 ## Building and running in production mode
 
 To create an optimised version of the app:
