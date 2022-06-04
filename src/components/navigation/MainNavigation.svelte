@@ -6,7 +6,6 @@
     export let pokemon = [];
 </script>
 <div>
-
     <Router>
         <div>
             <nav class="main-nav-flex-container">
@@ -21,7 +20,6 @@
             <Route path="/team"><Team /></Route>
         </div>
     </Router>
-
 </div>
 
 <style>
