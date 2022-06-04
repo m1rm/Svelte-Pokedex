@@ -17,7 +17,7 @@
         <div>
             <Route path="news"><News /></Route>
             <Route path="/"><Pokedex pokemon={pokemon}/></Route>
-            <Route path="/team"><Team /></Route>
+            <Route path="/team"><Team pokemon={pokemon} /></Route>
         </div>
     </Router>
 </div>
