@@ -19,7 +19,7 @@
     h2 {
         text-align:center !important;
         display:inline-block !important;
-        width:100%;
+        width: 100%;
     }
 
     .flex-container {
