@@ -1,27 +1,25 @@
 <div class="flex-container">
-
     {#await data then value}
         {#each data as resultObject}
             <div class="news-card">
                 {#if resultObject.image}
-                    <img src="{resultObject.image.thumbnail.contentUrl}" alt="news teaser"/>
+                    <img class="news-image" src="{resultObject.image.thumbnail.contentUrl}" alt="news teaser"/>
                 {:else}
-                    <img src="images/default-placeholder.png" alt="placholder" height="100px" width="100px"/>
+                    <img class="news-image" src="images/default-placeholder.png" alt="placholder" height="100px" width="100px"/>
                 {/if}
                 <div class="news-card-content">
                     <span>{resultObject.name}</span>
                     <span>{resultObject.description}</span>
                 </div>
             </div>
-
         {/each}
     {/await}
-
 </div>
 
 <style>
     .flex-container {
-        margin: 1rem 1rem 0 1rem;
+        margin: 24px 24px 0 48px;
+        width: 90%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -30,11 +28,17 @@
     .news-card {
         display: flex;
         align-items: center;
+        width: 100%;
+        margin: 0 0 24px 0;
+    }
+
+    .news-image {
+        margin-right: 16px;
     }
 
     .news-card-content {
         display: flex;
-        align-items: center;
+        align-items: start;
         flex-direction: column;
     }
 </style>
