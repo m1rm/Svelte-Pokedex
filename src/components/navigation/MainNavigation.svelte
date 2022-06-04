@@ -29,7 +29,7 @@
 
     .main-nav-link {
         text-decoration: none;
-        margin-bottom: 16px;
+        margin: 0 0 16px 16px;
     }
 
     @media screen and (max-width: 600px) {
