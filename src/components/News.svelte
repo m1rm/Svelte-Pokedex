@@ -42,7 +42,7 @@
         flex-direction: column;
     }
 
-    @media screen and (max-width:720px) {
+    @media screen and (max-width: 720px) {
         .on-mobile-hidden {
             display: none;
         }
