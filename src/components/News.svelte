@@ -9,7 +9,7 @@
                 {/if}
                 <div class="news-card-content">
                     <span>{resultObject.name}</span>
-                    <span>{resultObject.description}</span>
+                    <span class="on-mobile-hidden">{resultObject.description}</span>
                 </div>
             </div>
         {/each}
@@ -18,7 +18,7 @@
 
 <style>
     .flex-container {
-        margin: 24px 24px 0 48px;
+        margin: 24px 24px 0 16px;
         width: 90%;
         display: flex;
         flex-wrap: wrap;
@@ -40,6 +40,12 @@
         display: flex;
         align-items: start;
         flex-direction: column;
+    }
+
+    @media screen and (max-width:720px) {
+        .on-mobile-hidden {
+            display: none;
+        }
     }
 </style>
 
