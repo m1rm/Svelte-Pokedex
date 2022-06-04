@@ -1,6 +1,12 @@
 # Svelte-Pokédex
 
-This is a project made with [Svelte](https://svelte.dev). It lives at https://github.com/sveltejs/.
+This is a training project made with [Svelte](https://svelte.dev).  
+It lives at https://github.com/sveltejs/.
+
+## This project includes
+- importing data from JSON
+- basic routing using [svelte-roung](https://github.com/EmilTholin/svelte-routing)
+- a swiper using [nolimits4web/swiper](https://github.com/nolimits4web/swiper)
 
 ## Prerequisites
 -  [Node.js](https://nodejs.org)
