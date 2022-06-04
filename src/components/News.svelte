@@ -1,4 +1,5 @@
 <div class="flex-container">
+    <h2>News</h2>
     {#await data then value}
         {#each data as resultObject}
             <div class="news-card">
@@ -17,6 +18,12 @@
 </div>
 
 <style>
+    h2 {
+        text-align:center !important;
+        display:inline-block !important;
+        width:100%;
+    }
+
     .flex-container {
         margin: 24px 24px 0 16px;
         width: 90%;

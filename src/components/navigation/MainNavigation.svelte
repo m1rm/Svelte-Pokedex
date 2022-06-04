@@ -6,16 +6,22 @@
     export let pokemon = [];
 </script>
 <div>
-    <nav class="main-nav-flex-container">
-        <Router>
-            <a href='/news' class='main-nav-link' use:link>News</a>
-            <a href='/' class='main-nav-link' use:link>Pokédex</a>
-            <a href='/team' class='main-nav-link' use:link>Manage Your Team</a>
+
+    <Router>
+        <div>
+            <nav class="main-nav-flex-container">
+                <a href='/news' class='main-nav-link' use:link>News</a>
+                <a href='/' class='main-nav-link' use:link>Pokédex</a>
+                <a href='/team' class='main-nav-link' use:link>Manage Your Team</a>
+            </nav>
+        </div>
+        <div>
             <Route path="news"><News /></Route>
             <Route path="/"><Pokedex pokemon={pokemon}/></Route>
             <Route path="/team"><Team /></Route>
-        </Router>
-    </nav>
+        </div>
+    </Router>
+
 </div>
 
 <style>
@@ -29,7 +35,7 @@
 
     .main-nav-link {
         text-decoration: none;
-        margin: 0 0 16px 16px;
+        margin: 0 0 16px 0;
     }
 
     @media screen and (max-width: 600px) {
