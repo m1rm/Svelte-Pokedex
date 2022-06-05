@@ -17,8 +17,8 @@
 <div class="flex-container">
     <h2>Your Team</h2>
     <Swiper
-            spaceBetween={50}
-            slidesPerView={3}
+            autoHeight="true"
+            slidesPerView={2}
             on:slideChange={() => console.log('slide change')}
             on:swiper={(e) => console.log(e.detail[0])}
     >
