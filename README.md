@@ -16,13 +16,13 @@ This is a training project made with [Svelte](https://svelte.dev).
 Install the dependencies...
 
 ```bash
-npm install
+yarn install
 ```
 
 ...then start [Rollup](https://rollupjs.org):
 
 ```bash
-npm run dev
+yarn dev
 ```
 
 Navigate to [localhost:8080](http://localhost:8080). You should see the app running.
@@ -39,7 +39,7 @@ You will then have access to your API Key. The key as well as the API host must 
 To create an optimised version of the app:
 
 ```bash
-npm run build
+yarn build
 ```
 
 You can run the newly built app with `npm run start`. This uses [sirv](https://github.com/lukeed/sirv), which is included in your package.json's `dependencies` so that the app will work when you deploy to platforms like [Heroku](https://heroku.com).
